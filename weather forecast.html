@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+
+    <!--CSS only-->
+    <!--Adding CSS weather forecast link here-->
+    <link rel="stylesheet" href="weather forecast.css">
+</head>
+
+<body>
+    <!--taking container using "div" tag-->
+    <div class="container">
+
+        <!--header-->
+        <div class="header">
+            <h1 class="title">
+                <!--Project name-->
+                WEATHER FORECAST
+            </h1>
+
+            <!--Accessing date and day to webpage from user system  -->
+            <div class="date-container">
+                <div class="time" id="time">
+                    -- : --<span id="am-pm">--</span>
+                </div>
+                <div class="date" id="date">
+                    ------
+                </div>
+
+            </div>
+        </div>
+        <!--Accessing current weather data from the webServer-->
+        <div class="current-info">
+            <main>
+
+                <!--Creating search bar to get a city data -->
+                <center>
+                    <div class="weather"><b>
+                            <div class="search_bar">
+                                <input type="text" name="" id="input" placeholder="Enter city name">
+                                <button id="search" onclick="searchByCity()">Get</button></input>
+                            </div>
+
+                            <!--adding city name and temperature here-->
+                            <h2 id="city">Delhi,IN</h2>
+                            <div class="temp-box">
+                                <img src="/weathericon.png" alt="" id="img">
+                                <p id="temperature">25 °C</p>
+                            </div>
+                            <span id="clouds">Clouds</span>
+                            <div class="wf">
+                                <div class="pressure">Humitidy:
+                                    <span id="humidity">90</span><span id="per">%</span>
+                                </div>
+
+                                <div class="pressure">Pressure:
+                                    <span id="pressure">1080</span>
+                                </div>
+
+                                <div class="windspeed">Windspeed:
+                                    <span id="windspeed">5 </span><span id="per">km/h</span></span>
+                                </div>
+                        </b>
+                    </div>
+        </div>
+        </center>
+        <div class="divider1"></div>
+    </div>
+    </main>
+
+
+    <!--Adding future forecast from taking data from the webserver-->
+    <div class="forecstD">
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date"><u>Sun Jul 03 2022</u></p>
+                <p>31 °C </p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date"><u>Sun Jul 03 2022</u></p>
+                <p class="temp">31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+
+
+            <div class="dayF">
+                <p class="date"><u>Sun Jul 03 2022</u></p>
+                <p class="temp">31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+
+
+
+            <div class="dayF">
+                <p class="date"><u>Sun Jul 03 2022</u></p>
+                <p class="temp">31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <!--Assigning javascript file in html document-->
+    <script src="weather forecast.js"></script>
+</body>
+
+</html>
